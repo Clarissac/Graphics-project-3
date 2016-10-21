@@ -1,0 +1,5 @@
+all:
+	gcc reycast.c -o reycast
+
+clean:
+rm -rf reycast *~
