@@ -43,7 +43,7 @@ typedef struct Sphere{
 typedef struct Plane{
     diffuseColor;
     specularColor;
-    position
+    position;
 }Plane;
 
 Object;
