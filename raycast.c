@@ -8,7 +8,7 @@ Object** object = malloc(sizeof(Object*)*125);
 object[0] = malloc(sizeof(Object));
 object[1] = 0;
 
-typedef struct {
+/**typedef struct {
   int kind; // 0 = camera, 1 = sphere, 2 = plane
   double color[3];
   union {
@@ -27,6 +27,25 @@ typedef struct {
     } plane;
   };
 }
+*/
+typedef struct Camera{
+    double width;
+    double height;
+}Camera;
+
+typedef struct Sphere{
+    diffuseColor;
+    specularColor;
+    position;
+    double radius;
+}Sphere;
+
+typedef struct Plane{
+    diffuseColor;
+    specularColor;
+    position
+}Plane;
+
 Object;
 
 char* parse_string(FILE* json){
